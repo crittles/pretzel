@@ -45,7 +45,7 @@ main() {
     "$@" -f ffmetadata /tmp/list.txt \
     -- /tmp/abc.png \
 
-    ## file tags from tmp/list.txt
+    ## file tags from /tmp/list.txt
 	while IFS='=' read -r xx yy; do
                     case $xx in
                         title) title=$yy ;;
