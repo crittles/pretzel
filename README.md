@@ -23,11 +23,12 @@ chmod +x ./install
 `pretzel *.mp3`
 
 ```
-q      play next file
-space  play / unpause
-0 9    volume
-arrow  seek
-ctrl-c EXIT
+q       play next file      pretzel
+space   play / unpause      mpv-default
+0 9     volume              mpv-default
+arrow   seek                mpv-default
+ctrl-c  EXIT                SIGINT
+...     ...                 .....
 ```
 
 ## Customization
