@@ -44,7 +44,6 @@ main() {
     yes | ffmpeg -i \
     "$@" -f ffmetadata /tmp/list.txt \
     -- /tmp/abc.png \
-    -loglevel quiet \
 
     ## file tags from /tmp/list.txt
 	while IFS='=' read -r xx yy; do
