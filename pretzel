@@ -26,6 +26,9 @@ plunger() {
 }
 
 landscape() {
+    #seperate color from bar
+    printf " \e[0;0m"
+    
     cat <<EOF
 Art by Joan G. Stark
 
@@ -41,9 +44,10 @@ EOF
 }
 
 main() {
-    yes | ffmpeg -i \
+    yes | ffmpeg 2>/dev/null -i \
     "$@" -f ffmetadata /tmp/list.txt \
     -- /tmp/abc.png \
+    -loglevel quiet \
 
     ## file tags from /tmp/list.txt
 	while IFS='=' read -r xx yy; do
