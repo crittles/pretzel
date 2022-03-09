@@ -21,7 +21,7 @@ plunger() {
     --msg-level=all=no,statusline=debug "$@"
 
     # EXIT
-    printf '\e[?25h'
+    printf '\e[?25h\e[0;0m'
     stty echo
 }
 
