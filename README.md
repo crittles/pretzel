@@ -20,7 +20,7 @@ chmod +x ./install
 ./install
 ```
 #### 2. Usage
-`pretzel *.mp3`
+`pretzel file.mp3`
 
 ```
 q       play next file      pretzel
