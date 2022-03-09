@@ -61,7 +61,7 @@ main() {
                 done < /tmp/list.txt
 
     ## pick a random file in current directory
-    shuffle=$(ls | shuf -n 10 | awk 'NR==1')
+    shuffle=$(ls *.mp3 | shuf -n 100 | awk 'NR==1')
 
     bar
     plunger "$@"
