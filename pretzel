@@ -27,9 +27,7 @@ plunger() {
 
 landscape() {
     #seperate color from bar
-    printf " \e[0;0m"
-    
-    cat <<EOF
+    printf " \e[0;0m" | cat <<EOF
 Art by Joan G. Stark
 
                    \       /            _\/_
@@ -38,7 +36,6 @@ Art by Joan G. Stark
 =-=-_=-=-_=-=_=-_= -=======- = =-=_=-=_,-'|"'""-|-,_ 
  =- _=-=-_=- _=-= _--=====- _=-=_-_,-"          |
 jgs=- =- =-= =- = -  -===- -= - ."
-
 
 EOF
 }
